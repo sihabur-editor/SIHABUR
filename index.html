@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sihabur Rahman Molla — Creative Video Editor, Website Designer and AI Creator.">
+  <title>Sihabur Rahman Molla | Creative Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="cursor-dot"></div>
+  <div class="cursor-outline"></div>
+
+  <div class="loader-screen" id="loader">
+    <div class="loader-content">
+      <div class="loader-logo">SRM.</div>
+      <div class="loader-bar"><div class="loader-progress"></div></div>
+      <div class="loader-text">INITIALIZING CREATIVE ENGINE...</div>
+    </div>
+  </div>
+
+  <!-- Fixed cinematic scene: each layer has a different depth. -->
+  <div class="parallax-stage" aria-hidden="true">
+    <div class="scene-gradient" data-depth="0.03"></div>
+    <div class="scene-orbit orbit-one" data-depth="0.06"></div>
+    <div class="scene-orbit orbit-two" data-depth="0.09"></div>
+    <div class="scene-grid" data-depth="0.13"></div>
+    <div class="scene-stars" id="sceneStars" data-depth="0.18"></div>
+    <div class="scene-glow glow-one" data-depth="0.22"></div>
+    <div class="scene-glow glow-two" data-depth="0.30"></div>
+    <div class="scene-vignette"></div>
+  </div>
+
+  <canvas id="particle-canvas"></canvas>
+
+  <nav class="navbar">
+    <a class="nav-logo magnetic" href="#hero">SRM.</a>
+    <ul class="nav-links">
+      <li><a href="#hero" class="magnetic">Home</a></li>
+      <li><a href="#about" class="magnetic">About</a></li>
+      <li><a href="#services" class="magnetic">Services</a></li>
+      <li><a href="#projects" class="magnetic">Projects</a></li>
+      <li><a href="#contact" class="magnetic">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="hero" class="hero parallax-section">
+      <div class="hero-copy" data-depth="0.16">
+        <p class="hero-kicker">CREATIVE DIGITAL CREATOR</p>
+        <h1>SIHABUR<br><span>RAHMAN MOLLA</span></h1>
+        <div class="hero-roles">
+          <span>Video Editor</span>
+          <span>Website Designer</span>
+          <span>AI Creator</span>
+        </div>
+        <p class="hero-desc">Cinematic edits, interactive web experiences and AI-assisted digital realities.</p>
+        <a href="#projects" class="btn-primary magnetic">Explore Realities <b>↗</b></a>
+      </div>
+
+      <div class="portrait-wrap" data-depth="0.38">
+        <div class="portrait-ring ring-a"></div>
+        <div class="portrait-ring ring-b"></div>
+        <div class="portrait-card">
+          <div class="portrait-topline"><span>CREATOR / 2026</span><span>01</span></div>
+          <img src="assets/sihabur-portrait.jpg" alt="Sihabur Rahman Molla">
+          <div class="portrait-caption">
+            <span>SIHABUR</span>
+            <small>Visuals / Code / AI</small>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-scroll">SCROLL TO ENTER <span>↓</span></div>
+    </section>
+
+    <section id="about" class="section">
+      <div class="container grid-2">
+        <div class="reveal">
+          <p class="eyebrow">01 / ABOUT</p>
+          <h2 class="section-title">Beyond<br><span>Boundaries.</span></h2>
+          <p class="section-copy">I am a creative digital creator specializing in cinematic video editing, interactive web experiences, AI-assisted creativity and continuous learning. My goal is to turn ideas into memorable digital experiences.</p>
+          <div class="education-card tilt-card">
+            <span>EDUCATION</span>
+            <h3>Engineering Journey</h3>
+            <p>Building a foundation in engineering while creating on the side.</p>
+          </div>
+        </div>
+        <div class="skills-panel reveal">
+          <p class="eyebrow">CORE SKILLS</p>
+          <div class="skills-grid">
+            <span>Video Editing</span><span>HTML & CSS</span><span>JavaScript</span>
+            <span>Canva & Photoshop</span><span>Photo Editing</span><span>AI Tools</span>
+            <span>Creative Design</span><span>Prompt Engineering</span><span>ESP32</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="software-section">
+      <div class="marquee">
+        <div class="marquee-track">
+          <span>DaVinci Resolve</span><i>✦</i><span>CapCut</span><i>✦</i><span>Filmora</span><i>✦</i>
+          <span>FL Studio</span><i>✦</i><span>VS Code</span><i>✦</i><span>GitHub</span><i>✦</i>
+          <span>ChatGPT</span><i>✦</i><span>Gemini</span><i>✦</i><span>Photoshop</span><i>✦</i>
+          <span>DaVinci Resolve</span><i>✦</i><span>CapCut</span><i>✦</i><span>Filmora</span><i>✦</i>
+          <span>FL Studio</span><i>✦</i><span>VS Code</span><i>✦</i><span>GitHub</span><i>✦</i>
+          <span>ChatGPT</span><i>✦</i><span>Gemini</span><i>✦</i><span>Photoshop</span><i>✦</i>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="section">
+      <div class="container">
+        <p class="eyebrow reveal">02 / SERVICES</p>
+        <h2 class="section-title reveal">What I <span>create.</span></h2>
+        <div class="services-grid">
+          <article class="service-card tilt-card reveal"><b>01</b><div class="service-icon">🎬</div><h3>Professional Video Editing</h3><p>Cinematic cuts, transitions and visual storytelling.</p></article>
+          <article class="service-card tilt-card reveal"><b>02</b><div class="service-icon">⌁</div><h3>Interactive Websites</h3><p>Premium, responsive web experiences with motion.</p></article>
+          <article class="service-card tilt-card reveal"><b>03</b><div class="service-icon">✦</div><h3>AI Prompt Design</h3><p>Creative workflows and prompt systems for generative AI.</p></article>
+          <article class="service-card tilt-card reveal"><b>04</b><div class="service-icon">◈</div><h3>Creative Graphics & UI</h3><p>Modern visual systems, interfaces and digital assets.</p></article>
+          <article class="service-card tilt-card reveal"><b>05</b><div class="service-icon">◉</div><h3>Photo Editing</h3><p>Retouching, compositing and social-ready visuals.</p></article>
+          <article class="service-card tilt-card reveal"><b>06</b><div class="service-icon">↗</div><h3>Event & Surprise Sites</h3><p>Personalized landing pages built around a moment.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <p class="eyebrow reveal">03 / SELECTED WORK</p>
+        <h2 class="section-title reveal">Built for <span>impact.</span></h2>
+        <div class="projects-grid">
+          <article class="project-card reveal"><div class="project-visual p1"><span>01</span></div><div class="project-info"><h3>Study Preparation Dashboard</h3><p>Interactive web application for student tracking.</p></div></article>
+          <article class="project-card reveal"><div class="project-visual p2"><span>02</span></div><div class="project-info"><h3>Birthday Surprise Website</h3><p>Animated, emotion-driven web experience.</p></div></article>
+          <article class="project-card reveal"><div class="project-visual p3"><span>03</span></div><div class="project-info"><h3>Motion Graphics Showcase</h3><p>High-energy video editing compilation.</p></div></article>
+          <article class="project-card reveal"><div class="project-visual p4"><span>04</span></div><div class="project-info"><h3>AI Prompt Library</h3><p>Curated interface for generative design workflows.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stats-section">
+      <div class="container stats-layout">
+        <div class="reveal"><p class="eyebrow">04 / NEXT</p><h2 class="section-title">Always<br><span>building.</span></h2><p class="section-copy">Exploring WebXR, AI integration, automation and better visual storytelling.</p></div>
+        <div class="stats-grid reveal">
+          <div class="stat-card"><strong class="counter" data-target="50">0</strong><span>Projects / experiments</span></div>
+          <div class="stat-card"><strong class="counter" data-target="100">0</strong><span>AI tools explored</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact-section">
+      <div class="container contact-box reveal">
+        <p class="eyebrow">05 / CONTACT</p>
+        <h2>Let's create<br><span>the future.</span></h2>
+        <p>Have an idea, edit, website or creative experiment in mind?</p>
+        <div class="contact-links">
+          <a class="contact-card tilt-card magnetic" href="https://wa.me/919330806667" target="_blank" rel="noopener"><b>WhatsApp</b><span>Start a conversation ↗</span></a>
+          <a class="contact-card tilt-card magnetic" href="https://www.instagram.com/sihabur_editor" target="_blank" rel="noopener"><b>Instagram</b><span>@sihabur_editor ↗</span></a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer><span>SRM.</span><p>© 2026 Sihabur Rahman Molla</p></footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.13.0/dist/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
